@@ -98,11 +98,16 @@ class Elevator(object):
         #     Write the testing code (below) before writing this method.
         # ---------------------------------------------------------------------
         # ---------------------------------------------------------------------
+        if self.go_to_floor(floor):
+            return True
+        else:
+            return False
 
+# I want to say that when a value comes in. This method would check if the given floor is less
+# than the range of num_of_ floors.
 
-
-
-
+# I really hope that by me putting these here we can see where my misconseptions lie. I am really not sure what I am
+# not understanding. It has to be something fairly simple that I am just not seeing. 
 
 
 
@@ -200,14 +205,14 @@ def run_test_go_to_floor():
     e2 = Elevator(13, 6)
     expected_capacity = 13
     expected_num_floors = 6
-    expected_go_to_floor = 3
+    expected_go_to_floor = 20
     print('Expected: go_to_floor returns :', True)
     print("Expected:", expected_capacity, expected_num_floors, expected_go_to_floor)
 
     e3 = Elevator(1, 1)
     expected_capacity = 1
     expected_num_floors = 1
-    expected_go_to_floor = 1
+    expected_go_to_floor = 4
     print('Expected: go_to_floor returns :', True)
     print("Expected:", expected_capacity, expected_num_floors, expected_go_to_floor)
     ################################################################
@@ -215,9 +220,10 @@ def run_test_go_to_floor():
     #     Add your values for actual below here
     #
     ################################################################
-    e2.go_to_floor(4)
-
+    print("Actual:  ")
     print()
+
+# I am not sure how to get actual values to change the expected values. Again I wonder if my test code is wrong.
 
 def run_test_get_passengers():
     """ Tests the   get_passengers method of the Elevator class. """

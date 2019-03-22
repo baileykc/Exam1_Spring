@@ -175,6 +175,11 @@ def problem3(string_of_characters):
        Reversed string: b21a
        The user entered a normal string
     """
+
+    string_of_characters = ''
+
+
+
     # TODO: 3. Implement this function.
     # To implement this function, you need to reverse a string.
     # If you write your own method to reverse a string and solve
@@ -186,6 +191,21 @@ def problem3(string_of_characters):
 # imported by another module), then call the 'main' function.
 # -----------------------------------------------------------------------
 
+    string_of_characters = ''
+
+    for k in range(len(string_of_characters)-1 , -1, -1):
+        print(string_of_characters[k])
+
+# I tried this and I must be doing my test functions wrong. I cant get anything to print.
+# Also the paramter isnt defining so I do not have a clue. I am sorry.
+
+
+
+
+    for k in range(len(string_of_characters)):
+        string_of_characters = reverseString(string_of_characters)
+       print(string_of_characters)
+    return string_of_characters
 
 
 
@@ -193,7 +213,5 @@ def problem3(string_of_characters):
 if __name__ == '__main__':
     main()
 
-    string_of_characters = ''
-    for k in range(len(string_of_characters)):
-        reverseString(string_of_characters[k])
+
 
