@@ -107,7 +107,7 @@ class Elevator(object):
 # than the range of num_of_ floors.
 
 # I really hope that by me putting these here we can see where my misconseptions lie. I am really not sure what I am
-# not understanding. It has to be something fairly simple that I am just not seeing. 
+# not understanding. It has to be something fairly simple that I am just not seeing.
 
 
 

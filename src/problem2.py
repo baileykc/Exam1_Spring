@@ -59,7 +59,7 @@ def test_problem2():
     print('Test case 1 Actual: ')
     problem3(string_of_characters)
     print('*********************************************')
-    # TODO: 2. Write at least three reasonable test cases below.
+    # Done: 2. Write at least three reasonable test cases below.
     #         Three excellent test cases are worth 10 points
 
     #  Test case 2
